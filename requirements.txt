@@ -1,0 +1,11 @@
+phidata
+phidata[all]
+agno
+python-dotenv
+duckduckgo-search
+sqlalchemy
+groq
+pymysql
+yfinance
+wikipedia
+ddgs
