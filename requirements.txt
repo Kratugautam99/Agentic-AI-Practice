@@ -4,8 +4,7 @@ agno
 python-dotenv
 duckduckgo-search
 sqlalchemy
-groq
 pymysql
+groq
 yfinance
 wikipedia
-ddgs
