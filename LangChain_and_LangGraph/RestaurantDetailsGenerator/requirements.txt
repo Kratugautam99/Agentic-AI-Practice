@@ -1,0 +1,8 @@
+langchain[google-genai]
+langchain
+langgraph>0.2.27
+langchain_community
+pypdf
+faiss-cpu
+langchain-tavily
+langchain-huggingface

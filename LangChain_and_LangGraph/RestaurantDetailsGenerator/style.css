@@ -1,0 +1,34 @@
+.overlay-container-1 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.5) !important; 
+}
+.overlay-container-2 { 
+    display: flex; 
+    align-items: center; 
+    padding: 1rem; 
+    border-radius: 0px; 
+    background: rgba(247, 91, 63, 0.51); 
+} 
+div.stButton > button { 
+    border: 2px solid black !important; 
+    border-radius: 20px;
+    padding: 10px 24px; 
+    font-weight: bold; 
+    transition: all 0.3s ease;
+    margin-top: 20px
+    } 
+div.stButton > button:hover { 
+    background-color: white !important; 
+    color: black !important; 
+    border-radius: 10px; } 
+.stAlert { 
+    border-radius: 10px; 
+}
+.bordered-img {
+    display: inline-block;
+    border: 4px solid #151616;
+    padding: 4px;
+}
