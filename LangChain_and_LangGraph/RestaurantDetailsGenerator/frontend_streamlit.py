@@ -6,67 +6,30 @@ import backend_langchain as backend
 
 load_dotenv()
 
-# st.markdown("""<style> 
-#     .overlay-container-1 {
-#         display: flex;
-#         flex-direction: column;
-#         align-items: flex-start;
-#         padding: 1rem;
-#         border-radius: 0;
-#         background: rgba(0, 0, 0, 0.5);
-#     }
-#     .overlay-container-2 { 
-#         display: flex; 
-#         align-items: center; 
-#         padding: 1rem; 
-#         border-radius: 0px; 
-#         background: rgba(247, 91, 63, 0.51); 
-#     } 
-#     div.stButton > button { 
-#         border: 2px solid black !important; 
-#         border-radius: 20px;
-#         padding: 10px 24px; 
-#         font-weight: bold; 
-#         transition: all 0.3s ease;
-#      } 
-#     div.stButton > button:hover { 
-#         background-color: white !important; 
-#         color: black !important; 
-#         border-radius: 10px; } 
-#     .stAlert { 
-#         border-radius: 10px; 
-#     } 
-#     </style>""", unsafe_allow_html=True)
-
 st.set_page_config(
     page_title="Restaurant Details Generator",
     page_icon="logo.png",
     layout="centered"
 )
 
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
 def set_background_image(png_file):
-    bin_str = get_base64_of_bin_file(png_file)
-    page_bg_img = '''
+    page_bg_img = f"""
     <style>
-    .stApp {
-        background-image: url("data:image/png;base64,%s");
+    .stApp {{
+        background-image: url("{png_file}");
         background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
-    }
+    }}
     </style>
-    ''' % bin_str
+    """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-set_background_image("restaurant.png")
+set_background_image("https://raw.githubusercontent.com/Kratugautam99/Agentic-AI-Learning/refs/heads/master/LangChain_and_LangGraph/RestaurantDetailsGenerator/restaurant.png")
 local_css("style.css")
 
 if "result" not in st.session_state:
@@ -74,7 +37,7 @@ if "result" not in st.session_state:
 
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.markdown('<div class="bordered-img"><img src="logo.png" width="120"></div>',unsafe_allow_html=True)
+    st.markdown('<div class="bordered-img"><img src="https://raw.githubusercontent.com/Kratugautam99/Agentic-AI-Learning/refs/heads/master/LangChain_and_LangGraph/RestaurantDetailsGenerator/logo.png" width="120"></div>',unsafe_allow_html=True)
 with col2:
     st.markdown(
         """
