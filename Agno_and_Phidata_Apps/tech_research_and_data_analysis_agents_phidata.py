@@ -1,13 +1,18 @@
 import os
+import wikipediaapi
 from phi.agent import Agent
 from dotenv import load_dotenv
 from phi.model.groq import Groq
 from phi.tools.duckduckgo import DuckDuckGo
 from phi.tools.yfinance import YFinanceTools
-from phi.tools.wikipedia import WikipediaTools
 from phi.storage.agent.sqlite import SqlAgentStorage
 from phi.playground import Playground, serve_playground_app
 load_dotenv()
+
+def search_wikipedia(query: str) -> str:
+    wiki = wikipediaapi.Wikipedia('en')
+    page = wiki.page(query)
+    return page.summary if page.exists() else "No page found."
 
 # Research Agent with Qwen model
 research_agent = Agent(
@@ -15,7 +20,7 @@ research_agent = Agent(
     model=Groq(id="qwen/qwen3-32b"),
     tools=[
     DuckDuckGo(),
-    WikipediaTools()],
+    search_wikipedia],
     instructions=[
         "Specialize in technology and AI research",
         "Provide detailed technical explanations with sources",
@@ -65,4 +70,4 @@ app = playground.get_app()
 
 if __name__ == "__main__":
     current_file = os.path.splitext(os.path.basename(__file__))[0]
-    serve_playground_app(f"{current_file}:app", host="0.0.0.0", port=8080)
+    serve_playground_app(f"{current_file}:app", host="0.0.0.0", port=7777)

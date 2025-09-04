@@ -7,4 +7,5 @@ sqlalchemy
 pymysql
 groq
 yfinance
-wikipedia
+ddgs
+wikipedia-api

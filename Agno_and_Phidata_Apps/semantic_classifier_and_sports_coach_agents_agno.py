@@ -7,7 +7,6 @@ from agno.agent import Agent
 from agno.models.groq import Groq
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.playground import Playground
-
 load_dotenv()
 
 agent_storage: str = "agents.db"

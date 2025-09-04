@@ -6,3 +6,4 @@ pypdf
 faiss-cpu
 langchain-tavily
 langchain-huggingface
+zstandard
