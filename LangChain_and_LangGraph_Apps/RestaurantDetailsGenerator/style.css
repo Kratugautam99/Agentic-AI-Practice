@@ -1,13 +1,15 @@
 .overlay-container-1 {
     display: flex;
     align-items: center;
+    justify-content: center; 
     padding: 1rem;
     border-radius: 0px;
     background: rgba(0, 0, 0, 0.5) !important; 
 }
 .overlay-container-2 { 
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    justify-content: center; 
     padding: 1rem; 
     border-radius: 0px; 
     background: rgba(247, 91, 63, 0.51); 

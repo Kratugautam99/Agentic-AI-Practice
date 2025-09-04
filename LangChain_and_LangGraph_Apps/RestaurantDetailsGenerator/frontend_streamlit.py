@@ -1,5 +1,4 @@
 import os
-import base64
 import streamlit as st
 from dotenv import load_dotenv
 import backend_langchain as backend
@@ -29,7 +28,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-set_background_image("https://raw.githubusercontent.com/Kratugautam99/Agentic-AI-Learning/refs/heads/master/LangChain_and_LangGraph/RestaurantDetailsGenerator/restaurant.png")
+set_background_image("https://raw.githubusercontent.com/Kratugautam99/Agentic-AI-Learning/refs/heads/master/LangChain_and_LangGraph_Apps/RestaurantDetailsGenerator/restaurant.png")
 local_css("style.css")
 
 if "result" not in st.session_state:
@@ -37,7 +36,7 @@ if "result" not in st.session_state:
 
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.markdown('<div class="bordered-img"><img src="https://raw.githubusercontent.com/Kratugautam99/Agentic-AI-Learning/refs/heads/master/LangChain_and_LangGraph/RestaurantDetailsGenerator/logo.png" width="120"></div>',unsafe_allow_html=True)
+    st.markdown('<div class="bordered-img"><img src="https://raw.githubusercontent.com/Kratugautam99/Agentic-AI-Learning/refs/heads/master/LangChain_and_LangGraph_Apps/RestaurantDetailsGenerator/logo.png" width="120"></div>',unsafe_allow_html=True)
 with col2:
     st.markdown(
         """
@@ -178,7 +177,7 @@ with st.sidebar:
     custom_cuisine = st.text_input("Or type a custom cuisine", placeholder="e.g. Korean BBQ, Indo-Sino Food")
     model_name = st.selectbox(
         "Model",
-        ("Gemini-2.5-Flash", "Gemini-1.5-Flash", "Gemini-1.5-Pro"),
+        ("Gemini-1.5-Flash", "Gemini-1.5-Pro", "Gemini-2.5-Flash"),
         index=0
     )
     temperature = st.slider("Creativity", 0.0, 1.0, 0.4, 0.05)
@@ -222,11 +221,26 @@ if st.session_state.result:
     items = st.session_state.result.get("menu_items")
     
     if name:
-        st.markdown(f'<div class="overlay-container-2"><h3>{name}</h3></div>', unsafe_allow_html=True)
-        st.markdown('<div class="overlay-container-2"><h3>Menu Items</h3></div>', unsafe_allow_html=True)
+        st.markdown(f"""
+            <div class="overlay-container-2" style="display: flex; justify-content: center;">
+                <h3 style="font-size: 3rem; color: black; margin: 0;">{name}</h3>
+            </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+            <div class="overlay-container-2">
+                <h4>★ Menu Items ★</h4>
+            </div>
+        """, unsafe_allow_html=True)
+
         if items:
-            for item in items:
-                st.markdown(f'<div class="overlay-container-2"><p>- {item}</p></div>', unsafe_allow_html=True)
+            for no, item in enumerate(items, start=1):
+                st.markdown(f"""
+                    <div class="overlay-container-2" style="margin-bottom: 0.5rem;">
+                        <p style="margin-right: 0.5rem;">{no}. {item}</p>
+                    </div>
+                """, unsafe_allow_html=True)
+
         else:
             raw = st.session_state.result.get("menu_items_raw", "")
             if raw:
