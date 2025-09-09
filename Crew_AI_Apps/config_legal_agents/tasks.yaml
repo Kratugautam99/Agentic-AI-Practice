@@ -1,0 +1,61 @@
+fetch_case_law:
+  description: >
+    Scrape and summarize relevant legal precedents based on the input topic or case type.
+    Focus on extracting key judgments, legal principles, and jurisdictional relevance.
+    Ensure summaries are concise, accurate, and cite appropriate sources.
+  expected_output: >
+    A case law summary report that includes:
+    - Case titles and jurisdictions
+    - Key legal principles and rulings
+    - Relevance to the input topic
+    - Source URLs or citations
+    Save the report in 'resources/for_4/case_law_summaries/' as markdown.
+
+draft_contract:
+  description: >
+    Generate a legally sound contract based on input parameters such as contract type,
+    involved parties, governing law, and specific clauses. Ensure clarity, enforceability,
+    and alignment with standard legal practices.
+  expected_output: >
+    A draft contract document that includes:
+    - Title and contract type
+    - Parties involved
+    - Effective date and duration
+    - Key clauses and obligations
+    - Governing law
+    Save the contract in 'resources/for_4/contracts/' as markdown.
+
+check_compliance:
+  description: >
+    Validate the provided document against specified legal frameworks such as GDPR, HIPAA,
+    or local regulations. Highlight any compliance gaps, risks, or required modifications.
+  expected_output: >
+    A compliance report that includes:
+    - Frameworks checked (e.g., GDPR, HIPAA)
+    - Compliance status (pass/fail)
+    - Identified issues or violations
+    - Recommended changes
+    Save the report in 'resources/for_4/compliance_reports/' as markdown.
+
+edit_legal_document:
+  description: >
+    Refine the grammar, tone, and structure of legal drafts to ensure clarity, professionalism,
+    and alignment with legal writing standards. Preserve legal meaning while improving readability.
+  expected_output: >
+    An edited version of the legal document that includes:
+    - Improved grammar and sentence structure
+    - Consistent legal tone and formatting
+    - Tracked changes or revision notes
+    Save the edited document in 'resources/for_4/edited_documents/' as markdown.
+
+summarize_case_file:
+  description: >
+    Create digestible summaries of lengthy legal documents such as case files, judgments,
+    or filings. Focus on extracting key facts, legal issues, arguments, and outcomes.
+  expected_output: >
+    A case file summary that includes:
+    - Case background and parties involved
+    - Legal issues and arguments
+    - Final judgment or resolution
+    - Implications or precedential value
+    Save the summary in 'resources/for_4/case_file_summaries/' as markdown.
