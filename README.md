@@ -42,6 +42,8 @@ Agentic-AI-Learning/
 ├── MCP_Server/                   # Model Context Protocol server implementation
 ├── .vscode/                      # Editor settings and workspace configs
 ```
+---
+
 ## 🌐 Key Concepts Explored
 Agent orchestration across frameworks
 
@@ -54,6 +56,8 @@ Graph-based reasoning with LangGraph
 Declarative agent apps with Phidata
 
 Visualizing agent flows using Mermaid
+
+---
 
 ## 📚 Learning Resources
 LangChain Documentation
@@ -68,6 +72,8 @@ Agno Framework
 
 Model Context Protocol
 
+---
+
 ## 🛠️ Getting Started
 Clone the repo and explore each folder to see how different frameworks are used to build agentic systems:
 
@@ -75,6 +81,8 @@ bash
 git clone https://github.com/Kratugautam99/Agentic-AI-Learning.git
 cd Agentic-AI-Learning
 Each subfolder contains its own README or config files to guide you through setup and execution.
+
+---
 
 ## 📄 License
 This project is open-source under the MIT License. See LICENSE for details.
