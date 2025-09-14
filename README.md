@@ -21,8 +21,8 @@ This repo demonstrates how agentic systems can be orchestrated across multiple f
 |--------------------------|-----------------------------------------------------------|
 | **LangChain**            | LLM orchestration, memory, and tool use                   |
 | **LangGraph**            | Graph-based agent workflows and stateful execution        |
-| **CrewAI**               | Multi-agent coordination with role-based tasking          |
 | **LangSmith**            | Tracing, debugging, and observability for agentic flows   |
+| **CrewAI**               | Multi-agent coordination with role-based tasking          |
 | **Phidata**              | Declarative agent framework with modular app design       |
 | **Agno**                 | Lightweight agent framework for fast prototyping          |
 | **Model Context Protocol (MCP)** | Standardized context exchange between agents and models |
@@ -45,42 +45,58 @@ Agentic-AI-Learning/
 ---
 
 ## 🌐 Key Concepts Explored
-Agent orchestration across frameworks
+1. Agent orchestration across frameworks
 
-Role-based agent design (e.g., legal agent, marketing agent)
+2. Role-based agent design (e.g., legal agent, marketing agent)
 
-Context sharing via MCP
+3. Context sharing via MCP
 
-Graph-based reasoning with LangGraph
+4. Graph-based reasoning with LangGraph
 
-Declarative agent apps with Phidata
+5. Declarative agent apps with Phidata
 
-Visualizing agent flows using Mermaid
+6. Visualizing agent flows using Mermaid
 
 ---
 
 ## 📚 Learning Resources
-LangChain Documentation
 
-LangGraph Overview
+Explore foundational tools and frameworks for building agentic AI systems:
 
-CrewAI Guide
+1. **[LangChain Documentation](https://python.langchain.com/docs/introduction)**  
+   Build applications powered by language models using chains, agents, and tools.
 
-Phidata Framework
+2. **[LangGraph Documentation](https://www.langchain.com/langgraph)**  
+   Orchestrate multi-agent workflows with graph-based reasoning and stateful execution.
 
-Agno Framework
+3. **[LangSmith Documentation](https://docs.smith.langchain.com/reference/js)**  
+   Trace, evaluate, and debug LLM applications with powerful observability tools.
 
-Model Context Protocol
+4. **[CrewAI Documentation](https://docs.crewai.com/index)**  
+   Design collaborative multi-agent systems with roles, memory, and tool usage.
+
+5. **[Phidata Documentation](https://docs.phidata.com/introduction)**  
+   Create structured, declarative agents with built-in memory and reasoning.
+
+6. **[Agno Documentation](https://docs.agno.com/introduction)**  
+   Build secure, high-performance agentic apps using AgentOS and runtime orchestration.
+
+7. **[Pydantic Documentation](https://docs.pydantic.dev/latest/)**  
+   Validate and serialize data using Python type hints with speed and clarity.
+
+8. **[Model Context Protocol Setup Guide](https://modelcontextprotocol.io/docs/develop/build-server)**  
+   Learn how to build MCP-compatible servers for agent communication and context sharing.
 
 ---
 
 ## 🛠️ Getting Started
 Clone the repo and explore each folder to see how different frameworks are used to build agentic systems:
 
-bash
+```bash
 git clone https://github.com/Kratugautam99/Agentic-AI-Learning.git
 cd Agentic-AI-Learning
-Each subfolder contains its own README or config files to guide you through setup and execution.
+```
+Each subfolder contains its config files to guide you through setup and execution.
 
 ---
 
