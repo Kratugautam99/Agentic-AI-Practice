@@ -27,7 +27,6 @@ This repo demonstrates how agentic systems can be orchestrated across multiple f
 | **Agno**                 | Lightweight agent framework for fast prototyping          |
 | **Model Context Protocol (MCP)** | Standardized context exchange between agents and models |
 | **Pydantic**             | Data validation and structured modeling                   |
-| **TypedDict**            | Type-safe dictionaries for agent schemas                  |
 | **Mermaid**              | Graph visualization of agent workflows and dependencies   |
 
 ---
