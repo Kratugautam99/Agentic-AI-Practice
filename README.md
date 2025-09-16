@@ -28,6 +28,8 @@ This repo demonstrates how agentic systems can be orchestrated across multiple f
 | **Model Context Protocol (MCP)** | Standardized context exchange between agents and models |
 | **Pydantic**             | Data validation and structured modeling                   |
 | **Mermaid**              | Graph visualization of agent workflows and dependencies   |
+| **Playground**           | Interactive environment for testing and refining agent prompts and workflows |
+
 
 ---
 
