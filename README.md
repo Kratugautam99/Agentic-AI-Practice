@@ -7,9 +7,9 @@ Welcome to **Agentic AI Learning**, a curated playground for building autonomous
 ## 🧠 What Is Agentic AI?
 
 Agentic AI refers to artificial intelligence systems designed with:
-- **Autonomous decision-making**
-- **Goal-oriented behavior**
-- **Dynamic interaction** with environments and other agents
+- **Autonomous Decision-Making**
+- **Goal-Oriented Behavior**
+- **Dynamic Interaction** with environments and other agents
 
 This repo demonstrates how agentic systems can be orchestrated across multiple frameworks to reason, plan, and act with minimal human intervention.
 
@@ -98,6 +98,12 @@ git clone https://github.com/Kratugautam99/Agentic-AI-Learning.git
 cd Agentic-AI-Learning
 ```
 Each subfolder contains its config files to guide you through setup and execution.
+
+---
+## ©️ Certifications
+These below are from Langchain Academy Official Courses.
+- LangGraph Foundation Certification => https://academy.langchain.com/certificates/z4rtkxd8po
+- LangSmith Foundation Certification => https://academy.langchain.com/certificates/sey9wsnx9e
 
 ---
 
