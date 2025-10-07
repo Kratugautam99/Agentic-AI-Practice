@@ -1,6 +1,6 @@
-# 🤖 Agentic AI Learning
+# 🤖 Agentic AI Practice
 
-Welcome to **Agentic AI Learning**, a curated playground for building autonomous, goal-driven AI agents using the latest agentic frameworks. This repository brings together powerful tools like LangChain, LangGraph, Langsmith, CrewAI, Phidata, Agno, and Model Context Protocol (MCP) to explore the future of intelligent systems.
+Welcome to **Agentic AI Practice**, a curated playground for building autonomous, goal-driven AI agents using the latest agentic frameworks. This repository brings together powerful tools like LangChain, LangGraph, Langsmith, CrewAI, Phidata, Agno, and Model Context Protocol (MCP) to explore the future of intelligent systems.
 
 ---
 
